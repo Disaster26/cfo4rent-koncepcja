@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Zewnętrzny dyrektor finansowy dla firm, Katowice | CFO4rent Tomasz Ciemała</title>
 <meta name="description" content="Dyrektor finansowy i kontroler finansowy na godziny lub dni w tygodniu: płynność, budżety, raporty zarządcze, finansowanie, analizy i wyceny. Katowice, na miejscu w firmie i zdalnie.">
-<meta name="theme-color" content="#0b2a4a">
+<meta name="theme-color" content="#1a3b69">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
 <link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
@@ -15,7 +15,7 @@
 @font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
 @font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:"Manrope fb";src:local("Arial");size-adjust:103%;ascent-override:100%;descent-override:28%}
-:root{--navy:#0b2a4a;--navy2:#123a63;--deep:#071d34;--em:#0a9f6a;--em2:#07875a;--ink:#0f1c2b;--mut:#4a5868;--g:#eff2f6;--line:#d5dce5;--hh:62px;--w:min(calc(100vw - 32px),1640px)}
+:root{--navy:#1a3b69;--navy2:#234c82;--deep:#11284a;--em:#0697d6;--em2:#2fb0ec;--btn:#0672a3;--btn2:#055e87;--ink:#0f1c2b;--mut:#4a5868;--g:#eff2f6;--line:#d5dce5;--hh:62px;--w:min(calc(100vw - 32px),1640px)}
 @media (min-width:761px){:root{--hh:80px;--w:min(90vw,1640px)}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
@@ -27,8 +27,8 @@ h2{font-size:clamp(30px,2.9vw,56px)}
 h3{font-size:clamp(19px,1.15vw,23px);line-height:1.25;letter-spacing:-.01em}
 p{margin:0}
 .wrap{width:var(--w);margin:0 auto}
-.btn{display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:0 26px;background:#077a51;color:#fff;font-weight:700;font-size:17px;text-decoration:none;border:0;border-radius:3px;cursor:pointer;font-family:inherit;transition:background .2s}
-.btn:hover{background:#06633f}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:0 26px;background:var(--btn);color:#fff;font-weight:700;font-size:17px;text-decoration:none;border:0;border-radius:3px;cursor:pointer;font-family:inherit;transition:background .2s}
+.btn:hover{background:var(--btn2)}
 .btn .q{width:16px;height:16px;flex:none}
 /* znak kwadrantu = "4" z nazwy: cztery obszary finansów */
 .q{display:inline-grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px}
@@ -36,12 +36,11 @@ p{margin:0}
 .q i.on{opacity:1}
 /* naglowek */
 .top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
-.top.sc{border-color:var(--line);box-shadow:0 6px 20px rgba(11,42,74,.06)}
+.top.sc{border-color:var(--line);box-shadow:0 6px 20px rgba(26,59,105,.06)}
 .top .wrap{height:100%;display:flex;align-items:center;gap:24px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-size:24px;font-weight:800;letter-spacing:-.03em;line-height:1}
-.logo svg{width:30px;height:30px;flex:none}
-.logo span b{color:var(--em);font-weight:800}
-.logo span em{font-style:normal;font-weight:500}
+.logo{display:flex;align-items:center;text-decoration:none;line-height:1;flex:none}
+.logo img{height:44px;width:auto}
+@media (min-width:761px){.logo img{height:56px}}
 .nav{display:flex;gap:clamp(18px,2vw,36px);margin-left:auto;align-items:center}
 .nav a{text-decoration:none;font-weight:600;font-size:16px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
 .nav a:hover{border-color:var(--em)}
@@ -62,7 +61,7 @@ p{margin:0}
 .hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;align-items:center;background:var(--navy);color:#fff;overflow:hidden}
 .hero-foto{position:absolute;inset:0;margin:0}
 .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
-.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,29,52,.94) 0%,rgba(7,29,52,.86) 34%,rgba(7,29,52,.35) 62%,rgba(7,29,52,0) 82%)}
+.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,40,74,.94) 0%,rgba(17,40,74,.86) 34%,rgba(17,40,74,.35) 62%,rgba(17,40,74,0) 82%)}
 .hero-in{position:relative;width:var(--w);margin:0 auto;padding:48px 0}
 .hero-in>div{max-width:min(940px,54vw)}
 .hero h1{font-size:clamp(38px,3.4vw,70px)}
@@ -78,7 +77,7 @@ p{margin:0}
  .hero{flex-direction:column;align-items:stretch}
  .hero-foto{position:relative;inset:auto;flex:1 1 0;min-height:min(62vw,30svh);max-height:46svh;align-self:stretch;width:100%}
  .hero-foto img{position:absolute;inset:0;object-position:50% 45%}
- .hero-foto::after{background:linear-gradient(180deg,rgba(11,42,74,0) 55%,var(--navy) 100%)}
+ .hero-foto::after{background:linear-gradient(180deg,rgba(26,59,105,0) 55%,var(--navy) 100%)}
  .hero-in{flex:0 0 auto;padding:6px 0 max(28px,4svh)}
  .hero-in>div{max-width:none}
  .hero h1{font-size:clamp(28px,min(8.4vw,5.1svh),40px)}
@@ -99,7 +98,7 @@ p{margin:0}
 .prob .txt p.mocno{color:var(--ink);font-weight:600;font-size:1.08em}
 .prob figure{margin:0;position:relative}
 .prob figure img{width:100%;aspect-ratio:9/8;object-fit:cover}
-.prob figure::before{content:"";position:absolute;left:-14px;top:-14px;width:46%;height:46%;background:var(--em);z-index:-1}
+.prob figure::before{content:"";position:absolute;left:-14px;top:-14px;width:46%;height:46%;background:var(--em);clip-path:polygon(0 0,100% 0,0 100%);z-index:-1}
 .zysk{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
 .zysk li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line);font-weight:600}
 .zysk .q{width:18px;height:18px;margin-top:5px;color:var(--navy);flex:none}
@@ -113,12 +112,12 @@ p{margin:0}
 .row h3{font-size:clamp(20px,1.4vw,28px)}
 .row p{color:#c3d1df}
 .dni{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
-.dni span{font-size:12px;font-weight:700;color:#93a8be;letter-spacing:.02em}
+.dni span{font-size:12px;font-weight:700;color:#a9bdd2;letter-spacing:.02em}
 .dni i{display:block;height:34px;background:rgba(255,255,255,.1);position:relative;margin-top:6px}
 .dni i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--f,0);background:var(--em)}
 .proj{position:relative;height:34px;background:rgba(255,255,255,.1);margin-top:24px}
-.proj b{position:absolute;left:12%;right:30%;top:0;bottom:0;border:2px solid var(--em);background:repeating-linear-gradient(135deg,rgba(10,159,106,.55) 0 6px,rgba(10,159,106,.2) 6px 12px)}
-.proj span{position:absolute;top:-22px;font-size:12px;font-weight:700;color:#93a8be}
+.proj b{position:absolute;left:12%;right:30%;top:0;bottom:0;border:2px solid var(--em);background:repeating-linear-gradient(135deg,rgba(6,151,214,.55) 0 6px,rgba(6,151,214,.2) 6px 12px)}
+.proj span{position:absolute;top:-22px;font-size:12px;font-weight:700;color:#a9bdd2}
 .proj span:nth-of-type(1){left:12%}.proj span:nth-of-type(2){right:30%}
 .hyb{margin-top:clamp(32px,3vw,48px);display:flex;gap:18px;align-items:flex-start;max-width:900px;color:#dbe5ef}
 .hyb .q{width:22px;height:22px;flex:none;margin-top:4px;color:#fff}
@@ -146,14 +145,14 @@ p{margin:0}
 .zar{position:relative;color:#fff;min-height:clamp(460px,44vw,760px);display:flex;align-items:center;overflow:hidden;background:var(--deep)}
 .zar figure{position:absolute;inset:0;margin:0}
 .zar img{width:100%;height:100%;object-fit:cover;object-position:30% 40%}
-.zar figure::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(7,29,52,.94) 0%,rgba(7,29,52,.84) 40%,rgba(7,29,52,.2) 75%)}
+.zar figure::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(17,40,74,.94) 0%,rgba(17,40,74,.84) 40%,rgba(17,40,74,.2) 75%)}
 .zar .wrap{position:relative;display:flex;justify-content:flex-end}
 .zar .in{max-width:640px;padding:64px 0}
 .zar p{margin-top:20px;color:#d4dfea}
 .zar ul{margin:28px 0 0;padding:0;list-style:none}
 .zar li{padding:12px 0 12px 30px;border-top:1px solid rgba(255,255,255,.18);position:relative}
 .zar li::before{content:"";position:absolute;left:0;top:21px;width:12px;height:12px;background:var(--em)}
-@media (max-width:760px){.zar{flex-direction:column;align-items:stretch;min-height:0}.zar figure{position:relative;height:56vw}.zar figure::after{background:linear-gradient(180deg,rgba(7,29,52,0) 50%,var(--deep) 100%)}.zar .in{padding:8px 0 56px}}
+@media (max-width:760px){.zar{flex-direction:column;align-items:stretch;min-height:0}.zar figure{position:relative;height:56vw}.zar figure::after{background:linear-gradient(180deg,rgba(17,40,74,0) 50%,var(--deep) 100%)}.zar .in{padding:8px 0 56px}}
 /* kontakt */
 .kont{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,5vw,96px);align-items:start}
 form{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -179,8 +178,7 @@ textarea{min-height:140px;resize:vertical}
 /* stopka */
 .foot{background:var(--deep);color:#c3d1df;padding:56px 0 28px;font-size:15px}
 .foot .cols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:32px}
-.foot .logo{color:#fff}
-.foot .logo span b{color:#25c48b}
+.foot .logo img{height:56px}
 .foot p{margin-top:14px;max-width:420px}
 .foot h4{margin:0 0 10px;color:#fff;font-size:15px}
 .foot a{text-decoration:none}
@@ -206,10 +204,7 @@ textarea{min-height:140px;resize:vertical}
 <body>
 <header class="top" id="top">
  <div class="wrap">
-  <a class="logo" href="#" aria-label="CFO4rent - strona główna">
-   <svg viewBox="0 0 30 30" aria-hidden="true"><rect x="0" y="0" width="14" height="14" fill="#0b2a4a"/><rect x="16" y="0" width="14" height="14" fill="#0a9f6a"/><rect x="0" y="16" width="14" height="14" fill="#0b2a4a"/><rect x="16" y="16" width="14" height="14" fill="#0b2a4a"/></svg>
-   <span>CFO<b>4</b><em>rent</em></span>
-  </a>
+  <a class="logo" href="#" aria-label="CFO4rent - strona główna"><img src="img/logo.svg" width="140" height="31" alt="CFO4rent - trust is gained"></a>
   <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   <nav class="nav" id="nav">
    <a href="#dlaczego">Dla kogo</a>
@@ -413,10 +408,7 @@ textarea{min-height:140px;resize:vertical}
  <div class="wrap">
   <div class="cols">
    <div>
-    <a class="logo" href="#" aria-label="CFO4rent">
-     <svg viewBox="0 0 30 30" aria-hidden="true"><rect width="14" height="14" fill="#fff" opacity=".9"/><rect x="16" width="14" height="14" fill="#25c48b"/><rect y="16" width="14" height="14" fill="#fff" opacity=".9"/><rect x="16" y="16" width="14" height="14" fill="#fff" opacity=".9"/></svg>
-     <span>CFO<b>4</b><em>rent</em></span>
-    </a>
+    <a class="logo" href="#" aria-label="CFO4rent"><img src="img/logo-negatyw.svg" width="140" height="31" alt="CFO4rent - trust is gained"></a>
     <p>Zewnętrzny dyrektor i kontroler finansowy dla mikro, małych i średnich firm.</p>
    </div>
    <div>
