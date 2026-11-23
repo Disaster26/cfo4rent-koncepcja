@@ -77,7 +77,7 @@ p{margin:0}
 .hero-in{position:relative;width:var(--w);margin:0 auto;padding:calc(var(--hh) + 40px) 0 56px;display:flex;justify-content:flex-end}
 .hero-in>div{width:min(760px,48vw)}
 .hero h1{font-size:clamp(36px,3.3vw,66px)}
-.prompter{margin-top:22px;height:1.5em;overflow:hidden;font-size:clamp(20px,1.5vw,28px);font-weight:700;color:var(--em2);position:relative}
+.prompter{margin-top:22px;height:1.5em;overflow:hidden;font-size:clamp(20px,1.5vw,28px);font-weight:700;color:#7fd0f5;position:relative}
 .prompter span{position:absolute;left:0;top:0;white-space:nowrap;opacity:0;transform:translateY(100%);transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .6s}
 .prompter span.on{opacity:1;transform:none}
 .prompter span.out{opacity:0;transform:translateY(-100%)}
@@ -101,7 +101,7 @@ p{margin:0}
 .hero .cta .btn.jasny{display:none}
 .hero .gdzie{display:none}
 }
-.tasma{background:var(--em);color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;font-size:clamp(18px,1.6vw,30px);padding:16px 0}
+.tasma{background:var(--btn);color:#fff;overflow:hidden;white-space:nowrap;font-weight:800;font-size:clamp(18px,1.6vw,30px);padding:16px 0}
 .tasma div{display:inline-flex;gap:0;animation:tasma 38s linear infinite}
 .tasma span{display:inline-flex;align-items:center;gap:28px;padding-right:28px}
 .tasma span::after{content:"";width:10px;height:10px;background:var(--deep);border-radius:3px;transform:rotate(45deg)}
@@ -250,7 +250,7 @@ p{margin:0}
 .inne{margin-top:clamp(28px,3vw,44px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .inne a{display:flex;flex-direction:column;gap:6px;padding:24px;border-radius:var(--r);background:#fff;text-decoration:none;box-shadow:0 1px 2px rgba(17,40,74,.08);transition:transform .25s,box-shadow .25s}
 .inne a:hover{transform:translateY(-4px);box-shadow:var(--sh)}
-.inne b{font-size:14px;color:var(--em);font-weight:800}
+.inne b{font-size:14px;color:var(--btn);font-weight:800}
 .inne strong{font-size:1.15em}
 @media (max-width:800px){.inne{grid-template-columns:minmax(0,1fr)}}
 .kroki{margin-top:clamp(36px,4vw,60px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:k}
@@ -292,7 +292,7 @@ textarea{min-height:150px;resize:vertical}
 .foot .cols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
 .foot .logo img{height:52px}
 .foot p{margin-top:14px;max-width:400px}
-.foot h4{margin:0 0 10px;color:#fff;font-size:15px}
+.foot h2{margin:0 0 10px;color:#fff;font-size:15px;letter-spacing:0;line-height:1.4}
 .foot a{text-decoration:none}
 .foot a:hover{color:#fff}
 .foot .cols div>a,.foot .cols div>span{display:block;padding:3px 0}
@@ -337,7 +337,7 @@ textarea{min-height:150px;resize:vertical}
 </picture></figure>
 <div class="hero-in"><div>
 <h1>Zewnętrzny dyrektor finansowy dla firm na Śląsku i Podbeskidziu</h1>
-<div class="prompter" aria-live="off"><span class=on>Płynność pod kontrolą.</span><span>Budżet, który działa.</span><span>Raporty zamiast domysłów.</span><span>Dane z F-K bez przepisywania.</span><span>Decyzje oparte na liczbach.</span></div>
+<div class="prompter" aria-hidden="true"><span class=on>Płynność pod kontrolą.</span><span>Budżet, który działa.</span><span>Raporty zamiast domysłów.</span><span>Dane z F-K bez przepisywania.</span><span>Decyzje oparte na liczbach.</span></div>
 <p class="opis">Płynność, budżety, raporty i dashboardy dla mikro, małych i średnich firm. Pracuję u Ciebie na miejscu, rozliczam się według rzeczywistego czasu: od pół dnia w tygodniu do pełnego wymiaru.</p>
 <div class="cta"><a class="btn" href="kontakt/"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Opisz sytuację firmy</a><a class="btn jasny" href="zakres/">Zobacz zakres</a></div>
 <div class="gdzie"><a class="chip" href="obszar-dzialania/"><i></i>Górny Śląsk</a><a class="chip" href="obszar-dzialania/"><i></i>Podbeskidzie</a><a class="chip" href="obszar-dzialania/"><i></i>Śląsk Cieszyński</a></div>
@@ -385,9 +385,9 @@ textarea{min-height:150px;resize:vertical}
 <div class="cols">
 <div><a class="logo" href="" aria-label="CFO4rent"><img src="img/logo-negatyw.svg" width="140" height="31" alt="CFO4rent - trust is gained" loading="lazy"></a>
 <p>Zewnętrzny dyrektor i kontroler finansowy dla mikro, małych i średnich firm. Pracuję u klienta na miejscu: Górny Śląsk, Podbeskidzie, Śląsk Cieszyński.</p></div>
-<div><h4>Zakres</h4><a href="finanse-strategiczne/">Finanse strategiczne</a><a href="finanse-operacyjne/">Finanse operacyjne</a><a href="kontroling/">Kontroling</a><a href="analizy-finansowe/">Analizy finansowe</a></div>
-<div><h4>Strona</h4><a href="wspolpraca/">Współpraca</a><a href="obszar-dzialania/">Obszar działania</a><a href="o-mnie/">O mnie</a><a href="kontakt/">Kontakt</a></div>
-<div><h4>Kontakt</h4><a href="mailto:kontakt@cfo4rent.pl">kontakt@cfo4rent.pl</a><span>tel. <span class="tel-wkrotce">numer wkrótce</span></span><span>Adres korespondencyjny:<br>ul. Smugowa 24A, 40-750 Katowice</span></div>
+<div><h2>Zakres</h2><a href="finanse-strategiczne/">Finanse strategiczne</a><a href="finanse-operacyjne/">Finanse operacyjne</a><a href="kontroling/">Kontroling</a><a href="analizy-finansowe/">Analizy finansowe</a></div>
+<div><h2>Strona</h2><a href="wspolpraca/">Współpraca</a><a href="obszar-dzialania/">Obszar działania</a><a href="o-mnie/">O mnie</a><a href="kontakt/">Kontakt</a></div>
+<div><h2>Kontakt</h2><a href="mailto:kontakt@cfo4rent.pl">kontakt@cfo4rent.pl</a><span>tel. <span class="tel-wkrotce">numer wkrótce</span></span><span>Adres korespondencyjny:<br>ul. Smugowa 24A, 40-750 Katowice</span></div>
 </div>
 <div class="dol"><span>&copy; <span id="rok">2026</span> CFO4rent Tomasz Ciemała &middot; <a href="polityka-prywatnosci/">Polityka prywatności</a> &middot; <button type="button" id="ck-open">Ustawienia cookies</button> &middot; Zdjęcia poglądowe</span>
 <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=cfo4rent.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
