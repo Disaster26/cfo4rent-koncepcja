@@ -120,13 +120,17 @@ p{margin:0}
 .prom .lewa{position:sticky;top:calc(var(--hh) + 40px);align-self:start}
 .prom .lewa .lead{max-width:520px}
 .linie{list-style:none;margin:0;padding:2vh 0 6vh}
-.linie li{display:grid;grid-template-columns:auto 1fr;gap:6px 26px;padding:clamp(28px,4vh,48px) 0;opacity:.22;transform:scale(.97);transform-origin:left center;transition:opacity .5s,transform .5s}
-.linie li.on{opacity:1;transform:none}
+.linie li{display:grid;grid-template-columns:auto 1fr;gap:6px 26px;padding:clamp(28px,4vh,48px) 0;transform:scale(.97);transform-origin:left center;transition:transform .5s}
+.linie li b,.linie li strong,.linie li span{transition:color .5s}
+.linie li.on{transform:none}
 .linie b{grid-row:span 2;font-size:clamp(46px,4.4vw,88px);line-height:.9;font-weight:800;color:var(--navy);letter-spacing:-.04em}
 .linie strong{font-size:clamp(22px,1.8vw,34px);line-height:1.2;letter-spacing:-.015em}
 .linie span{color:var(--mut);font-size:1.02em;max-width:560px}
+.linie li:not(.on) b{color:#7d8a9b}
+.linie li:not(.on) strong{color:#5d6875}
+.linie li:not(.on) span{color:#6a7684}
 .linie li.on b{color:var(--em)}
-@media (max-width:860px){.prom{grid-template-columns:minmax(0,1fr)}.prom .lewa{position:static}.linie{padding:8px 0 0}.linie li{opacity:.3}}
+@media (max-width:860px){.prom{grid-template-columns:minmax(0,1fr)}.prom .lewa{position:static}.linie{padding:8px 0 0}}
 .tablica{position:relative;margin-top:clamp(36px,4vw,64px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:20px 0 30px}
 .kartka{position:relative;text-align:left;font:inherit;color:inherit;border:0;cursor:pointer;border-radius:var(--r);padding:clamp(24px,2.2vw,38px);min-height:clamp(330px,26vw,440px);margin-right:-12%;box-shadow:0 24px 40px -22px rgba(17,40,74,.55),0 2px 4px rgba(17,40,74,.12);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;display:flex;flex-direction:column;align-items:flex-start}
 .kartka:nth-child(1){background:var(--navy);color:#fff;transform:rotate(-3deg);z-index:1}
@@ -139,7 +143,7 @@ p{margin:0}
 .kartka:focus-visible{outline:3px solid var(--em);outline-offset:4px}
 .kartka .nr{font-size:clamp(44px,3.6vw,72px);font-weight:800;line-height:.9;letter-spacing:-.04em;opacity:.9}
 .kartka h3{margin-top:18px;font-size:clamp(22px,1.7vw,32px);max-width:12ch}
-.kartka p{margin-top:14px;font-size:.98em;opacity:.85;max-width:24ch}
+.kartka p{margin-top:14px;font-size:.98em;max-width:24ch}
 .kartka .otworz{margin-top:auto;padding-top:20px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:10px}
 .kartka .otworz::before{content:"+";display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:2px solid currentColor;font-size:18px;line-height:1}
 @media (max-width:900px){
